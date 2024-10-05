@@ -51,5 +51,5 @@ $(document).ready(() => {
   const rulesModalElem = new bootstrap.Modal(rulesModal);
   setTimeout(() => {
     rulesModalElem.show();
-  }, 20000);
+  }, 30000);
 });
