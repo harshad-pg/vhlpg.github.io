@@ -1,14 +1,440 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VHL PG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./static/bootstrap.css">
+    <link rel="stylesheet" href="./static/aos.css">
+    <link rel="stylesheet" href="./static/index.css">
+    <link rel="shortcut icon" href="./static/img/pg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <h1>Hello VHL PG</h1>
+<body data-bs-theme="dark">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder lead fs-4" href="#home">VHL PG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#vhlNavBar"
+                aria-controls="vhlNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="vhlNavBar">
+                <ul class="navbar-nav ms-auto align-items-start align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link menu__link me-3" href="#home"><i class="fas fa-home pe-2"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu__link me-3" href="#images"><i
+                                class="fas fa-door-open pe-2"></i>Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu__link me-3" href="#services"><i
+                                class="fa-solid fa-bell-concierge pe-2"></i>Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu__link me-3" href="#pricing">
+                            <i class="fa-solid fa-indian-rupee-sign pe-2"></i>Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu__link me-3" href="#map"><i class="fas fa-map pe-2"></i>Location</a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="theme-switch">
+                            <input type="checkbox" id="theme-checkbox" />
+                            <label for="theme-checkbox">
+                                <div></div>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6">
+                                        <path fill-rule="evenodd"
+                                            d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6">
+                                        <path
+                                            d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <div class="mt-5"></div>
+    <!-- Overview Start -->
+    <div class="container mt-5 pt-5" id="home">
+        <div class="mb-3">
+            <div class="card-body">
+                <h5 class="card-title display-4 text-uppercase fw-bold lead">Vhl Paying Guest</h5>
+                <p class="card-text text-capitalize">Established in 2019. Owned by Harshad bhai, his friendly and
+                    supportive behavior is
+                    appreciated by many customers. Provider of student accommodation center services with modern
+                    amenities for
+                    comfortable living.</p>
+                <a href="https://wa.me/+918758599805" target="_blank" class="btn btn-success"><i
+                        class="fab fa-whatsapp pe-2"></i>Whatsapp</a>
+            </div>
+        </div>
+    </div>
+    <!-- Overview End -->
+    <hr class="my-5">
+    <!-- Room Images Start -->
+    <section id="images" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                    <h2 class="mb-4 display-5 text-center">Room Images</h2>
+                    <p class="text-secondary mb-5 text-center text-capitalize">We Offer Clean & Hygenic Rooms, Daily
+                        Cleaning and we want to maintain this cleaness from you also.</p>
+                    <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="5000" class="carousel-item active">
+                    <div class="row mx-auto container-sm d-flex justify-content-around">
+                        <div class="card col-md-5 mx-5">
+                            <img src="./static/img/vhl5.jpg" class="img-fluid object-fit-cover" style="height: 500px;">
+                        </div>
+                        <div class="card col-md-5 mx-5">
+                            <img src="./static/img/vhl6.jpg" class="img-fluid object-fit-cover" style="height: 500px;">
+                        </div>
+                    </div>
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <div class="row mx-auto container-sm d-flex  justify-content-around">
+                        <div class="card col-md-5 mx-5">
+                            <img src="./static/img/vhl3.jpg" class="img-fluid object-fit-cover" style="height: 500px;">
+                        </div>
+                        <div class="card col-md-5 mx-5">
+                            <img src="./static/img/vhl4.jpg" class="img-fluid object-fit-cover" style="height: 500px;">
+                        </div>
+                    </div>
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <div class="row mx-auto container-sm d-flex  justify-content-around">
+                        <div class="card col-md-5 mx-5">
+                            <img src="./static/img/vhl1.jpg" class="img-fluid object-fit-cover" style="height: 500px;">
+                        </div>
+                        <div class="card col-md-5 mx-5">
+                            <img src="./static/img/vhl2.jpg" class="img-fluid object-fit-cover" style="height: 500px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Room Images End -->
+    <hr class="my-5">
+    <!-- Features Start -->
+    <section class="py-5 py-xl-8" id="services">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                    <h2 class="mb-5 display-5 text-center">Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container overflow-hidden text-capitalize">
+            <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="badge bg-primary p-3 mb-4">
+                        <i class="fa-solid fa-toilet-paper"></i>
+                    </div>
+                    <h4 class="mb-3">Seperate Bathroom</h4>
+                    <p class="mb-3 text-secondary">
+                        Seperate Bathroom in each room for no delay in work.
+                    </p>
+                </div>
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="badge bg-primary p-3 mb-4">
+                        <i class="fa-solid fa-jug-detergent"></i>
+                    </div>
+                    <h4 class="mb-3">Laundary</h4>
+                    <p class="mb-3 text-secondary">
+                        On-site laundry facilities allow for convenient and efficient cleaning of your clothes without
+                        the hassle of traveling
+                        to a laundromat.
+                    </p>
+                </div>
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="badge bg-primary p-3 mb-4">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h4 class="mb-3">Wifi</h4>
+                    <p class="mb-3 text-secondary">
+                        High-speed WiFi is available throughout the premises, allowing you to stay connected for work,
+                        study, or leisure.
+                    </p>
+                </div>
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="badge bg-primary p-3 mb-4">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                    </div>
+                    <h4 class="mb-3">Air Conditioning</h4>
+                    <p class="mb-3 text-secondary">
+                        All rooms are equipped with air conditioning to provide a comfortable living environment,
+                        especially during the warmer
+                        months.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features End -->
+    <hr class="my-5">
+    <!-- Pricing Start -->
+    <main id="pricing" class="m4" data-aos="fade-up">
+        <div class="container">
+            <section class="text-center">
+                <h4 class="mb-4"><strong>Rooms Pricing</strong></h4>
+                <p>The deposit is required to secure your accommodation and will be refundable upon completion
+                    of the
+                    notice period,
+                    subject to the condition of the property.</p>
+                <div class="row text-capitalize">
+                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card border-warning">
+                            <div class="card-header py-3">
+                                <p class="text-uppercase small mb-2"><strong>Five Sharing</strong></p>
+                                <h5 class="mb-0">₹6000/month</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-action rounded">Attached Bathroom
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">Wifi</li>
+                                    <li class="list-group-item list-group-item-action rounded">Cupboard</li>
+                                    <li class="list-group-item list-group-item-action rounded">Fridge</li>
+                                    <li class="list-group-item list-group-item-action rounded">Room Cleaning
+                                        Service
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">Laundary Service
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">
+                                        Meal Plan (Veg only; included in rent)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card border border-primary">
+                            <div class="card-header py-3">
+                                <p class="text-uppercase small mb-2"><strong>Four Sharing</strong></p>
+                                <h5 class="mb-0">₹6500/month</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-action rounded">Attached Bathroom
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">Wifi</li>
+                                    <li class="list-group-item list-group-item-action rounded">Cupboard</li>
+                                    <li class="list-group-item list-group-item-action rounded">Fridge</li>
+                                    <li class="list-group-item list-group-item-action rounded">Room Cleaning
+                                        Service
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">Laundary Service
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">AC - Extra Light
+                                        Bill
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">
+                                        Meal Plan (Veg only; included in rent)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card border-info">
+                            <div class="card-header py-3">
+                                <p class="text-uppercase small mb-2"><strong>Three Sharing</strong></p>
+                                <h5 class="mb-0">₹7000/month</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-action rounded">Attached Bathroom
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">Wifi</li>
+                                    <li class="list-group-item list-group-item-action rounded">Cupboard</li>
+                                    <li class="list-group-item list-group-item-action rounded">Fridge</li>
+                                    <li class="list-group-item list-group-item-action rounded">Room Cleaning
+                                        Service
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">Laundary Service
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">AC - Extra Light
+                                        Bill
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">
+                                        Meal Plan (Veg only; included in rent)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card border-success">
+                            <div class="card-header py-3">
+                                <p class="text-uppercase small mb-2"><strong>Two Sharing</strong></p>
+                                <h5 class="mb-0">₹8000/month</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-action rounded">Attached Bathroom
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">Wifi</li>
+                                    <li class="list-group-item list-group-item-action rounded">Cupboard</li>
+                                    <li class="list-group-item list-group-item-action rounded">Fridge</li>
+                                    <li class="list-group-item list-group-item-action rounded">Room Cleaning
+                                        Service
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">Laundary Service
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">AC - Extra Light
+                                        Bill
+                                    </li>
+                                    <li class="list-group-item list-group-item-action rounded">
+                                        Meal Plan (Veg only; included in rent)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Pricing End -->
+    <hr class="my-5">
+    <!-- Location Start -->
+    <section class="our-blog p-0 m-0 bg-silver" id="map" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="title mb-5 text-center">
+                <h3>Google Maps</h3>
+            </div>
+            <iframe data-aos="fade-up"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3671.2502785728875!2d72.5170539!3d23.0512842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b633e2e6f1d%3A0xb025728ef585c260!2sVHL%20PG%20(Harshad%20Labana)!5e0!3m2!1sen!2sin!4v1728121346018!5m2!1sen!2sin"
+                class="w-100" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- Location End -->
+    <hr class="my-3">
+    <!-- Footer Start -->
+    <div class="container-fluid m-0 p-0 mt-5" data-aos="fade-up">
+        <footer class="text-center text-lg-start">
+            <div class="container p-4">
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">VHL Boys PG</h5>
+                        <p>Move into VHL PG, a professionally managed PG home in the Thaltej, Ahmedabad. Located
+                            in
+                            a safe neighborhood, this
+                            unisex PG offers various modern amenities for your comfort. This PG has single
+                            occupancy
+                            types. This PG is nearby major
+                            commercial and educational hubs.</p>
+                        <div class="mt-4">
+                            <a type="button" class="btn btn-floating btn-primary btn-lg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a type="button"
+                                href="https://www.justdial.com/Ahmedabad/Vhl-Paying-Guest-PVR-Cinema-Bhaikakanagar-Bhaikakanagar-Thalthej"
+                                target="_blank" class="btn btn-floating btn-warning btn-lg"><i
+                                    class="fa fa-globe"></i></a>
+                            <a type="button" target="_blank" href="https://www.google.com/search?q=vhl+pg"
+                                class="btn btn-floating btn-danger btn-lg"><i class="fab fa-google"></i></a>
+                            <a type="button" class="btn btn-floating btn-dark btn-lg"
+                                style="background-color: rgb(255, 0, 166);"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Reach Now !</h5>
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">
+                                    202 Aawas Appartment, Bhaikakanagar, Bhaikakanagar Thalthej, Ahmedabad -
+                                    380054
+                                    (PVR
+                                    Cinema & Bhaikakanagar)
+                                </span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">
+                                    <a href="mailto:labanaharshad@gamil.com"
+                                        class="text-decoration-none">labanaharshad@gamil.com</a>
+                                </span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">
+                                    +918758599805
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Visiting Hours</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action rounded">
+                                Sun - Sat : 10:00 AM - 10:00 PM
+                            </li>
+                            <li class="list-group-item list-group-item-action rounded">
+                                Send Enquiry By Mail
+                            </li>
+                            <li class="list-group-item list-group-item-action rounded">
+                                Whatsapp - Calls - SMS
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                &copy; 2024 Copyright VHLPG: Made with &hearts; - Hosted on <a href="https://github.io"
+                    class="text-decoration-none" target="_blank">Github.io</a>
+            </div>
+        </footer>
+    </div>
+    <!-- Footer End -->
+    <div class="position-absolute top-0 end-0">
+        <div class="modal fade" tabindex="-1" id="rulesModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Rule & Regulation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please review VHL PG <code>Rules & Regulation</code> before joining. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Accept</button>
+                        <a role="button" class="btn btn-primary" href="./vhl-rules.pdf" download="vhl-rules.pdf">
+                            Download Rules
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./static/bootstrap.js"></script>
+<script src="./static/popper.js"></script>
+<script src="./static/jquery.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="./static/index.js"></script>
 
 </html>
