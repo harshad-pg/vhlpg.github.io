@@ -16,197 +16,261 @@
 
 <body data-bs-theme="dark">
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom pb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bolder lead fs-4" href="#home">VHL PG</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#vhlNavBar"
-                aria-controls="vhlNavBar" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom pb-3" aria-label="Main Navigation">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bolder lead fs-4" href="#home">
+                <span class="d-inline-block align-middle">VHL PG</span>
+            </a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#vhlNavBar"
+                aria-controls="vhlNavBar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="vhlNavBar">
-                <ul class="navbar-nav ms-auto align-items-lg-center align-items-sm-start align-items-md-start">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
                     <li class="nav-item">
-                        <a class="nav-link menu__link me-3" href="#home"><i class="fas fa-home pe-2"></i>Home</a>
+                        <a class="nav-link menu__link d-flex align-items-center" href="#home">
+                            <i class="fas fa-home me-2" aria-hidden="true"></i>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__link me-3" href="#images"><i
-                                class="fas fa-door-open pe-2"></i>Rooms</a>
+                        <a class="nav-link menu__link d-flex align-items-center" href="#images">
+                            <i class="fas fa-door-open me-2" aria-hidden="true"></i>
+                            <span>Rooms</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__link me-3" href="#services"><i
-                                class="fa-solid fa-bell-concierge pe-2"></i>Services</a>
+                        <a class="nav-link menu__link d-flex align-items-center" href="#services">
+                            <i class="fa-solid fa-bell-concierge me-2" aria-hidden="true"></i>
+                            <span>Services</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__link me-3" href="#pricing">
-                            <i class="fa-solid fa-indian-rupee-sign pe-2"></i>Prices</a>
+                        <a class="nav-link menu__link d-flex align-items-center" href="#pricing">
+                            <i class="fa-solid fa-indian-rupee-sign me-2" aria-hidden="true"></i>
+                            <span>Prices</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu__link me-3" href="#map"><i class="fas fa-map pe-2"></i>Location</a>
+                        <a class="nav-link menu__link d-flex align-items-center" href="#map">
+                            <i class="fas fa-map me-2" aria-hidden="true"></i>
+                            <span>Location</span>
+                        </a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <div class="theme-switch">
-                            <input type="checkbox" id="theme-checkbox" />
-                            <label for="theme-checkbox">
-                                <div></div>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="w-6 h-6">
-                                        <path fill-rule="evenodd"
-                                            d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-                                            clip-rule="evenodd"></path>
+                            <input 
+                                type="checkbox" 
+                                id="theme-checkbox" 
+                                class="visually-hidden"
+                                aria-label="Toggle dark mode"
+                            />
+                            <label for="theme-checkbox" class="theme-toggle d-flex align-items-center">
+                                <span class="moon-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"></path>
                                     </svg>
                                 </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="w-6 h-6">
-                                        <path
-                                            d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
-                                        </path>
+                                <span class="sun-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
                                     </svg>
                                 </span>
                             </label>
                         </div>
-
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+   <hr>
     <!-- Navbar End -->
-    <div class="mt-5"></div>
-    <!-- Overview Start -->
-    <div class="container mt-5 pt-5" id="home">
-        <div class="mb-3">
-            <div class="card-body">
-                <h5 class="card-title display-4 text-uppercase fw-bold lead">Vhl Paying Guest</h5>
-                <p class="card-text text-capitalize">Established in 2019. Owned by Harshad bhai, his friendly and
-                    supportive behavior is
-                    appreciated by many customers. Provider of student accommodation center services with modern
-                    amenities for
-                    comfortable living.</p>
-                <a href="https://wa.me/+918758599805" target="_blank" class="btn btn-success"><i
-                        class="fab fa-whatsapp pe-2"></i>Whatsapp</a>
+
+    <div class="container py-5" id="home">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body px-0 text-center">
+                        <h1 class="card-title display-4 text-uppercase fw-bold mb-4 text-primary" style="margin-bottom: 3rem;">
+                            VHL Paying Guest
+                            <small class="d-block text-muted h5 mt-2">Your Home Away from Home</small>
+                        </h1>
+                        <p class="lead text-muted mb-4"><b>
+                            Established in 2019, VHL Paying Guest is more than just accommodation – it's a supportive living space curated by Harshad Bhai, known for his exceptional hospitality and customer-first approach.
+                        </b></p>
+                        <p class="text-muted mb-4"> <b>
+                            We specialize in providing premium student accommodation with modern amenities, ensuring comfort, security, and a nurturing environment for young professionals and students.
+                        </b> </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <!-- WhatsApp Button -->
+                            <a href="https://wa.me/+918758599805" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-success d-inline-flex align-items-center px-4 py-2">
+                                <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>
+                                <span>Connect on WhatsApp</span>
+                            </a>
+    
+                            <!-- Learn More Button -->
+                            <a href="#services" 
+                               class="btn btn-outline-primary d-inline-flex align-items-center px-4 py-2">
+                                <i class="fas fa-info-circle me-2" aria-hidden="true"></i>
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
+
+    
     <!-- Overview End -->
-    <hr class="my-5">
+    <hr>
     <!-- Room Images Start -->
-    <section id="images" data-aos="fade-up" data-aos-duration="1000">
+    <section id="images" class="py-5 py-lg-8" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                    <h2 class="mb-4 display-5 text-center">Room Images</h2>
-                    <p class="text-secondary mb-5 text-center text-capitalize">We Offer Clean & Hygenic Rooms, Daily
-                        Cleaning and we want to maintain this cleaness from you also.</p>
-                    <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
-                </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+              <h2 class="mb-4 display-5 text-center"> <b>Explore Our Rooms</b></h2>
+              <p class="text-secondary mb-5 text-center">
+                Take a look at our clean, hygienic rooms maintained with daily cleaning.
+              </p>
             </div>
-        </div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          </div>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div data-bs-interval="5000" class="carousel-item active">
-                    <div class="row mx-auto container-sm d-flex justify-content-around">
-                        <div class="card col-md-12 col-sm-12 col-lg-6 p-5 border-0">
-                            <img src="./static/img/vhl5.jpg" class="img-fluid border-0 object-fit-cover w-100"
-                                style="height: 500px;">
-                        </div>
-                        <div class="card col-md-12 col-sm-12 col-lg-6 p-5 border-0">
-                            <img src="./static/img/vhl6.jpg" class="img-fluid border-0 object-fit-cover"
-                                style="height: 500px;">
-                        </div>
+              <div data-bs-interval="5000" class="carousel-item active">
+                <div class="row mx-auto justify-content-center">
+                  <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+                    <div class="card border-0 shadow-sm">
+                      <img src="./static/img/vhl5.jpg" class="card-img-top object-fit-cover" style="height: 350px;">
                     </div>
-                </div>
-                <div data-bs-interval="5000" class="carousel-item">
-                    <div class="row mx-auto container-sm d-flex  justify-content-around">
-                        <div class="card col-md-12 col-sm-12 col-lg-6 p-5 border-0">
-                            <img src="./static/img/vhl3.jpg" class="img-fluid border-0 object-fit-cover"
-                                style="height: 500px;">
-                        </div>
-                        <div class="card col-md-12 col-sm-12 col-lg-6 p-5 border-0">
-                            <img src="./static/img/vhl4.jpg" class="img-fluid border-0 object-fit-cover"
-                                style="height: 500px;">
-                        </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5">
+                    <div class="card border-0 shadow-sm">
+                      <img src="./static/img/vhl6.jpg" class="card-img-top object-fit-cover" style="height: 350px;">
+                      
                     </div>
+                  </div>
                 </div>
-                <div data-bs-interval="5000" class="carousel-item">
-                    <div class="row mx-auto container-sm d-flex  justify-content-around">
-                        <div class="card col-md-12 col-sm-12 col-lg-6 p-5 border-0">
-                            <img src="./static/img/vhl1.jpg" class="img-fluid border-0 object-fit-cover"
-                                style="height: 500px;">
-                        </div>
-                        <div class="card col-md-12 col-sm-12 col-lg-6 p-5 border-0">
-                            <img src="./static/img/vhl2.jpg" class="img-fluid border-0 object-fit-cover"
-                                style="height: 500px;">
-                        </div>
+              </div>
+              <div data-bs-interval="5000" class="carousel-item">
+                <div class="row mx-auto justify-content-center">
+                  <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+                    <div class="card border-0 shadow-sm">
+                      <img src="./static/img/vhl3.jpg" class="card-img-top object-fit-cover" style="height: 350px;">
+                      
                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5">
+                    <div class="card border-0 shadow-sm">
+                      <img src="./static/img/vhl4.jpg" class="card-img-top object-fit-cover" style="height: 350px;">
+                      
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div data-bs-interval="5000" class="carousel-item">
+                <div class="row mx-auto justify-content-center">
+                  <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+                    <div class="card border-0 shadow-sm">
+                      <img src="./static/img/vhl1.jpg" class="card-img-top object-fit-cover" style="height: 350px;">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5">
+                    <div class="card border-0 shadow-sm">
+                      <img src="./static/img/vhl2.jpg" class="card-img-top object-fit-cover" style="height: 350px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-    </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
     <!-- Room Images End -->
-    <hr class="my-5">
+    <hr>
     <!-- Features Start -->
     <section class="py-5 py-xl-8" id="services">
         <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                    <h2 class="mb-5 display-5 text-center">Services</h2>
-                </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+              <h2 class="mb-5 display-5 text-center"><b>Our Services</b></h2>
             </div>
-        </div>
-        <div class="container overflow-hidden text-capitalize">
-            <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
-                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="badge bg-primary p-3 mb-4">
-                        <i class="fa-solid fa-toilet-paper"></i>
-                    </div>
-                    <h4 class="mb-3">Seperate Bathroom</h4>
-                    <p class="mb-3 text-secondary">
-                        Seperate Bathroom in each room for no delay in work.
-                    </p>
+          </div>
+          <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
+            <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+              <div class="d-flex align-items-center mb-4">
+                <div class="badge bg-primary p-3 me-3">
+                  <i class="fas fa-toilet-paper fa-fw"></i>
                 </div>
-                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="badge bg-primary p-3 mb-4">
-                        <i class="fa-solid fa-jug-detergent"></i>
-                    </div>
-                    <h4 class="mb-3">Laundary</h4>
-                    <p class="mb-3 text-secondary">
-                        On-site laundry facilities allow for convenient and efficient cleaning of your clothes without
-                        the hassle of traveling
-                        to a laundromat.
-                    </p>
-                </div>
-                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="badge bg-primary p-3 mb-4">
-                        <i class="fa-solid fa-wifi"></i>
-                    </div>
-                    <h4 class="mb-3">Wifi</h4>
-                    <p class="mb-3 text-secondary">
-                        High-speed WiFi is available throughout the premises, allowing you to stay connected for work,
-                        study, or leisure.
-                    </p>
-                </div>
-                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="badge bg-primary p-3 mb-4">
-                        <i class="fa-solid fa-temperature-arrow-up"></i>
-                    </div>
-                    <h4 class="mb-3">Air Conditioning</h4>
-                    <p class="mb-3 text-secondary">
-                        All rooms are equipped with air conditioning to provide a comfortable living environment,
-                        especially during the warmer
-                        months.
-                    </p>
-                </div>
+                <h4 class="mb-0">Separate Bathrooms</h4>
+              </div>
+              <p class="mb-0 text-secondary">
+                Each room has a separate bathroom to ensure no delays during your stay.
+              </p>
             </div>
+            <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+              <div class="d-flex align-items-center mb-4">
+                <div class="badge bg-primary p-3 me-3">
+                  <i class="fas fa-tshirt fa-fw"></i>
+                </div>
+                <h4 class="mb-0">Laundry Facilities</h4>
+              </div>
+              <p class="mb-0 text-secondary">
+                On-site laundry allows you to clean your clothes without the hassle of going to a laundromat.
+              </p>
+            </div>
+            <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+              <div class="d-flex align-items-center mb-4">
+                <div class="badge bg-primary p-3 me-3">
+                  <i class="fas fa-wifi fa-fw"></i>
+                </div>
+                <h4 class="mb-0">High-Speed WiFi</h4>
+              </div>
+              <p class="mb-0 text-secondary">
+                Stay connected for work, study, or leisure with our reliable high-speed internet.
+              </p>
+            </div>
+            <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2500">
+              <div class="d-flex align-items-center mb-4">
+                <div class="badge bg-primary p-3 me-3">
+                  <i class="fas fa-utensils fa-fw"></i>
+                </div>
+                <h4 class="mb-0">Delicious Meals</h4>
+              </div>
+              <p class="mb-0 text-secondary">
+                Enjoy wholesome vegetarian meals prepared fresh daily with our meal service.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     <!-- Features End -->
     <hr class="my-5">
     <!-- Pricing Start -->
     <main id="pricing" class="m4" data-aos="fade-up">
         <div class="container">
             <section class="text-center">
-                <h4 class="mb-4"><strong>Rooms Pricing</strong></h4>
+                <h2 class="mb-4 display-5 text-center"> <b>Rooms Pricing</b></h2>
                 <p>The deposit is required to secure your accommodation and will be refundable upon completion
                     of the
                     notice period,
@@ -214,8 +278,9 @@
                 <div class="row text-capitalize">
                     <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card border-warning">
-                            <div class="card-header py-3">
+                            <div class="card-header py-3" style="background-color: #ef7f1a; color:#fff;">
                                 <p class="text-uppercase small mb-2"><strong>Five Sharing</strong></p>
+                                <hr>
                                 <h5 class="mb-0">₹6000/month</h5>
                             </div>
                             <div class="card-body">
@@ -225,6 +290,7 @@
                                     <li class="list-group-item list-group-item-action rounded">Wifi</li>
                                     <li class="list-group-item list-group-item-action rounded">Cupboard</li>
                                     <li class="list-group-item list-group-item-action rounded">Fridge</li>
+                                    <li class="list-group-item list-group-item-action rounded">Non AC</li>
                                     <li class="list-group-item list-group-item-action rounded">Room Cleaning
                                         Service
                                     </li>
@@ -238,9 +304,10 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="card border border-primary">
-                            <div class="card-header py-3">
+                        <div class="card border border-warning">
+                            <div class="card-header py-3" style="background-color: #ef7f1a; color:#fff;">
                                 <p class="text-uppercase small mb-2"><strong>Four Sharing</strong></p>
+                                <hr>
                                 <h5 class="mb-0">₹6500/month</h5>
                             </div>
                             <div class="card-body">
@@ -250,13 +317,11 @@
                                     <li class="list-group-item list-group-item-action rounded">Wifi</li>
                                     <li class="list-group-item list-group-item-action rounded">Cupboard</li>
                                     <li class="list-group-item list-group-item-action rounded">Fridge</li>
+                                    <li class="list-group-item list-group-item-action rounded">Non AC</li>
                                     <li class="list-group-item list-group-item-action rounded">Room Cleaning
                                         Service
                                     </li>
                                     <li class="list-group-item list-group-item-action rounded">Laundary Service
-                                    </li>
-                                    <li class="list-group-item list-group-item-action rounded">AC - Extra Light
-                                        Bill
                                     </li>
                                     <li class="list-group-item list-group-item-action rounded">
                                         Meal Plan (Veg only; included in rent)
@@ -266,9 +331,10 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="card border-info">
-                            <div class="card-header py-3">
+                        <div class="card border-warning">
+                            <div class="card-header py-3" style="background-color: #ef7f1a; color:#fff;">
                                 <p class="text-uppercase small mb-2"><strong>Three Sharing</strong></p>
+                                <hr>
                                 <h5 class="mb-0">₹7000/month</h5>
                             </div>
                             <div class="card-body">
@@ -278,13 +344,11 @@
                                     <li class="list-group-item list-group-item-action rounded">Wifi</li>
                                     <li class="list-group-item list-group-item-action rounded">Cupboard</li>
                                     <li class="list-group-item list-group-item-action rounded">Fridge</li>
+                                    <li class="list-group-item list-group-item-action rounded">Non AC</li>
                                     <li class="list-group-item list-group-item-action rounded">Room Cleaning
                                         Service
                                     </li>
                                     <li class="list-group-item list-group-item-action rounded">Laundary Service
-                                    </li>
-                                    <li class="list-group-item list-group-item-action rounded">AC - Extra Light
-                                        Bill
                                     </li>
                                     <li class="list-group-item list-group-item-action rounded">
                                         Meal Plan (Veg only; included in rent)
@@ -294,9 +358,10 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="card border-success">
-                            <div class="card-header py-3">
+                        <div class="card border-warning">
+                            <div class="card-header py-3" style="background-color: #ef7f1a; color:#fff;">
                                 <p class="text-uppercase small mb-2"><strong>Two Sharing</strong></p>
+                                <hr>
                                 <h5 class="mb-0">₹8000/month</h5>
                             </div>
                             <div class="card-body">
@@ -306,13 +371,11 @@
                                     <li class="list-group-item list-group-item-action rounded">Wifi</li>
                                     <li class="list-group-item list-group-item-action rounded">Cupboard</li>
                                     <li class="list-group-item list-group-item-action rounded">Fridge</li>
+                                    <li class="list-group-item list-group-item-action rounded">Non AC</li>
                                     <li class="list-group-item list-group-item-action rounded">Room Cleaning
                                         Service
                                     </li>
                                     <li class="list-group-item list-group-item-action rounded">Laundary Service
-                                    </li>
-                                    <li class="list-group-item list-group-item-action rounded">AC - Extra Light
-                                        Bill
                                     </li>
                                     <li class="list-group-item list-group-item-action rounded">
                                         Meal Plan (Veg only; included in rent)
@@ -331,7 +394,7 @@
     <section class="our-blog p-0 m-0 bg-silver" id="map" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="title mb-5 text-center">
-                <h3>Google Maps</h3>
+                <h2 class="display-5 text-center"> <b>Google Maps</b></h2>
             </div>
             <iframe data-aos="fade-up"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3671.2502785728875!2d72.5170539!3d23.0512842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b633e2e6f1d%3A0xb025728ef585c260!2sVHL%20PG%20(Harshad%20Labana)!5e0!3m2!1sen!2sin!4v1728121346018!5m2!1sen!2sin"
@@ -340,7 +403,7 @@
         </div>
     </section>
     <!-- Location End -->
-    <hr class="my-3">
+    <hr>
     <!-- Footer Start -->
     <div class="container-fluid m-0 p-0 mt-5" data-aos="fade-up">
         <footer class="text-center text-lg-start">
