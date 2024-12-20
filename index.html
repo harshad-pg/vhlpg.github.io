@@ -12,6 +12,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .feature-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-card .icon-container {
+        background-color: #007bff;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .feature-card h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    </style>
 </head>
 
 <body data-bs-theme="dark">
@@ -217,50 +249,58 @@
             </div>
           </div>
           <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
-            <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
-              <div class="d-flex align-items-center mb-4">
-                <div class="badge bg-primary p-3 me-3">
-                  <i class="fas fa-toilet-paper fa-fw"></i>
+            <div class="row g-4">
+                <!-- Feature Card -->
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="feature-card">
+                    <div class="icon-container">
+                      <i class="fas fa-toilet-paper fa-fw"></i>
+                    </div>
+                    <h4>Separate Bathrooms</h4>
+                    <p>Each room has a separate bathroom to ensure no delays during your stay.</p>
+                  </div>
                 </div>
-                <h4 class="mb-0">Separate Bathrooms</h4>
-              </div>
-              <p class="mb-0 text-secondary">
-                Each room has a separate bathroom to ensure no delays during your stay.
-              </p>
-            </div>
-            <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500">
-              <div class="d-flex align-items-center mb-4">
-                <div class="badge bg-primary p-3 me-3">
-                  <i class="fas fa-tshirt fa-fw"></i>
+                <!-- Feature Card -->
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                  <div class="feature-card">
+                    <div class="icon-container">
+                      <i class="fas fa-tshirt fa-fw"></i>
+                    </div>
+                    <h4>Laundry Facilities</h4>
+                    <p>On-site laundry allows you to clean your clothes without the hassle of going to a laundromat.</p>
+                  </div>
                 </div>
-                <h4 class="mb-0">Laundry Facilities</h4>
-              </div>
-              <p class="mb-0 text-secondary">
-                On-site laundry allows you to clean your clothes without the hassle of going to a laundromat.
-              </p>
-            </div>
-            <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
-              <div class="d-flex align-items-center mb-4">
-                <div class="badge bg-primary p-3 me-3">
-                  <i class="fas fa-wifi fa-fw"></i>
+                <!-- Feature Card -->
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+                  <div class="feature-card">
+                    <div class="icon-container">
+                      <i class="fas fa-wifi fa-fw"></i>
+                    </div>
+                    <h4>High-Speed WiFi</h4>
+                    <p>Stay connected for work, study, or leisure with our reliable high-speed internet.</p>
+                  </div>
                 </div>
-                <h4 class="mb-0">High-Speed WiFi</h4>
-              </div>
-              <p class="mb-0 text-secondary">
-                Stay connected for work, study, or leisure with our reliable high-speed internet.
-              </p>
-            </div>
-            <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2500">
-              <div class="d-flex align-items-center mb-4">
-                <div class="badge bg-primary p-3 me-3">
-                  <i class="fas fa-utensils fa-fw"></i>
+                <!-- Feature Card -->
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="2500">
+                  <div class="feature-card">
+                    <div class="icon-container">
+                      <i class="fas fa-utensils fa-fw"></i>
+                    </div>
+                    <h4>Delicious Meals</h4>
+                    <p>Enjoy wholesome vegetarian meals prepared fresh daily with our meal service.</p>
+                  </div>
                 </div>
-                <h4 class="mb-0">Delicious Meals</h4>
+                <!-- Feature Card -->
+                <div class="col-11 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="3000">
+                  <div class="feature-card">
+                    <div class="icon-container">
+                      <i class="fas fa-car fa-fw"></i>
+                    </div>
+                    <h4>Parking Facilities</h4>
+                    <p>Facilities for two-wheeler and four-wheeler parking are available.</p>
+                  </div>
+                </div>
               </div>
-              <p class="mb-0 text-secondary">
-                Enjoy wholesome vegetarian meals prepared fresh daily with our meal service.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -441,8 +481,8 @@
                             </li>
                             <li class="mb-3">
                                 <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">
-                                    <a href="mailto:labanaharshad@gamil.com"
-                                        class="text-decoration-none">labanaharshad@gamil.com</a>
+                                    <a href="mailto:labanaharshad@gmail.com"
+                                        class="text-decoration-none">labanaharshad@gmail.com</a>
                                 </span>
                             </li>
                             <li class="mb-3">
@@ -488,7 +528,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Accept</button>
-                        <a role="button" class="btn btn-primary" href="./vhl-rules.pdf" download="vhl-rules.pdf">
+                        <a role="button" class="btn btn-primary" href="./VHL-PG-NOTES.pdf" download="vhl-rules.pdf">
                             Download Rules
                         </a>
                     </div>
